@@ -18,6 +18,10 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontFamily: {
+        "dancing-script": ["var(--font-dancing-script)"],
+        dosis: ["var(--font-dosis)"],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

@@ -1,6 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Dancing_Script, Dosis, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
+const dancingScript = Dancing_Script({
+  variable: "--font-dancing-script",
+  subsets: ["latin"],
+});
+
+const dosis = Dosis({
+  variable: "--font-dosis",
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +36,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} 
+          ${dancingScript.variable} ${dosis.variable} antialiased tracking-wider`}
       >
         {children}
       </body>
