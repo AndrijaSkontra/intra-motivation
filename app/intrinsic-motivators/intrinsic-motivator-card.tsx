@@ -23,7 +23,7 @@ export default function IntrinsicMotivatorCard({ carouselApi }: Props) {
           competative and look be better today than yesterday.
         </p>
         <p className="font-dosis text-gray-500 mt-6 text-sm">
-          People: Albern Einstain, Michale Jordan, Leonardo Da Vinci
+          People: Albert Einstein, Michael Jordan, Leonardo da Vinci
         </p>
       </CardContent>
       <CardFooter>
