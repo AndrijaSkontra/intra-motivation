@@ -14,24 +14,22 @@ export default function IntrinsicMotivatorCard({ carouselApi }: Props) {
       </CardContent>
       <CardFooter>
         <div className="w-full flex justify-between">
-          <div className="p-2 border border-stone-300 rounded-full">
-            <ArrowLeftIcon
-              className="size-4"
-              onClick={() => {
-                console.log("clicked here");
-                carouselApi?.scrollPrev();
-              }}
-            />
-          </div>
-          <div
+          <button
+            type="button"
             className="p-2 border border-stone-300 rounded-full"
-            onClick={() => {
-              console.log("clckk");
-              carouselApi?.scrollNext();
-            }}
+            onClick={() => carouselApi?.scrollPrev()}
+            aria-label="Previous slide"
+          >
+            <ArrowLeftIcon className="size-4" />
+          </button>
+          <button
+            type="button"
+            className="p-2 border border-stone-300 rounded-full"
+            onClick={() => carouselApi?.scrollNext()}
+            aria-label="Next slide"
           >
             <ArrowRightIcon className="size-4" />
-          </div>
+          </button>
         </div>
       </CardFooter>
     </Card>
