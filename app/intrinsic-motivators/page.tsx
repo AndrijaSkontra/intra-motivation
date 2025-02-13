@@ -1,12 +1,14 @@
 "use client";
-import IntrinsicMotivatorCard from "@/app/intrinsic-motivators/intrinsic-motivator-card";
+import AutonomyCard from "@/app/intrinsic-motivators/autonomy-card";
+import AutotelicityCard from "@/app/intrinsic-motivators/autotelicity-card";
+import CuriosityCard from "@/app/intrinsic-motivators/curiosity-card";
+import MasteryCard from "@/app/intrinsic-motivators/mastery-card";
+import PurposeCard from "@/app/intrinsic-motivators/purpose-card";
 import {
   Carousel,
   CarouselApi,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useState } from "react";
 
@@ -14,7 +16,7 @@ export default function IntraMotivatorsPage() {
   const [api, setApi] = useState<CarouselApi>();
 
   return (
-    <div className="p-2">
+    <div className="p-2 md:p-56">
       <Carousel
         opts={{
           align: "start",
@@ -24,17 +26,21 @@ export default function IntraMotivatorsPage() {
       >
         <CarouselContent>
           <CarouselItem>
-            <IntrinsicMotivatorCard carouselApi={api} />
+            <MasteryCard carouselApi={api} />
           </CarouselItem>
           <CarouselItem>
-            <IntrinsicMotivatorCard carouselApi={api} />
+            <AutotelicityCard carouselApi={api} />
           </CarouselItem>
           <CarouselItem>
-            <IntrinsicMotivatorCard carouselApi={api} />
+            <AutonomyCard carouselApi={api} />
+          </CarouselItem>
+          <CarouselItem>
+            <CuriosityCard carouselApi={api} />
+          </CarouselItem>
+          <CarouselItem>
+            <PurposeCard carouselApi={api} />
           </CarouselItem>
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
       </Carousel>
     </div>
   );
