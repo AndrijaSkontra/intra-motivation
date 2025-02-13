@@ -11,7 +11,7 @@ export default function AutonomyCard({ carouselApi }: Props) {
     <IntrinsicMotivatorBaseCard carouselApi={carouselApi}>
       <Image
         src={"/autonomy.png"}
-        alt="Mastery image"
+        alt="Autonomy image"
         width={100}
         height={100}
         className="my-2"

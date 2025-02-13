@@ -18,7 +18,7 @@ export default function AutotelicityCard({ carouselApi }: Props) {
       <h2 className="font-dancing-script text-4xl">Autotelicity</h2>
       <p className="font-dosis mt-6">
         Love what you are doing. Finding yourself being producitive without any
-        reason in your free time is a indicator you don't lack this trait.
+        reason in your free time is a indicator you don&apos;t lack this trait.
       </p>
       <p className="font-dosis text-gray-500 mt-6 text-sm">
         People: Elon Musk, Mark Zuckerberg
