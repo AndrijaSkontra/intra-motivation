@@ -10,8 +10,8 @@ export default function AutotelicityCard({ carouselApi }: Props) {
   return (
     <IntrinsicMotivatorBaseCard carouselApi={carouselApi}>
       <Image
-        src={"autotelicity.svg"}
-        alt="Mastery image"
+        src={"/autotelicity.svg"}
+        alt="Autotelicity image"
         width={100}
         height={100}
       />
