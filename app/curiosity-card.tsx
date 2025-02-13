@@ -1,4 +1,4 @@
-import IntrinsicMotivatorBaseCard from "@/app/intrinsic-motivators/intrinsic-motivator-base-card";
+import IntrinsicMotivatorBaseCard from "@/app/intrinsic-motivator-base-card";
 import { CarouselApi } from "@/components/ui/carousel";
 import Image from "next/image";
 
