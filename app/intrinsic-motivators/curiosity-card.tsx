@@ -10,8 +10,8 @@ export default function CuriosityCard({ carouselApi }: Props) {
   return (
     <IntrinsicMotivatorBaseCard carouselApi={carouselApi}>
       <Image
-        src={"curiosity.svg"}
-        alt="Mastery image"
+        src={"/curiosity.svg"}
+        alt="Curiosity image"
         width={100}
         height={100}
         className="my-2"
